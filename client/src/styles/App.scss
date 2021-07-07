@@ -1,0 +1,115 @@
+// MAIN VARIABLES SECTION
+
+//Colors
+$orange: hsl(22, 65, 57);
+$lightorange: hsl(21, 94, 75);
+$midnight: hsl(0, 0, 6);
+$grey: hsl(0, 0, 95);
+$app-lightgrey: hsl(0, 0, 98);
+
+//Breakpoints
+$bp-mobile: 600px;
+$bp-tablet: 1000px;
+
+//Font stylings
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@mixin app-header {
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.app-h1 {
+  @include app-header;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+
+.app-h2 {
+  @include app-header;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+.app-h3 {
+  @include app-header;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+.app-h4 {
+  @include app-header;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+.app-h5 {
+  @include app-header;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+.app-h6 {
+  @include app-header;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+.app-overline {
+  color: $orange;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+}
+
+.app-subtitle {
+  color: $orange;
+  font-weight: 700px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+// GLOBAL SECTION
+@mixin app-button-base {
+}
+.app-button-1 {
+  @include app-button-base;
+}
+
+// HEADER SECTION
+// Since the header is seen in all views, it is included here
+
+.header-container {
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 24px;
+}
+
+.footer-container {
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 24px 28px;
+}
